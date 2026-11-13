@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fernando Mendívil — DevOps and Cloud Engineer</title>
+    <meta
+      name="description"
+      content="DevOps and Cloud Engineer. Infrastructure automation on AWS and Azure with Terraform, CI/CD, containers, and monitoring."
+    />
+    <meta name="theme-color" content="#f6f3ec" />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      (function () {
+        var lang = "en";
+        try {
+          var stored = localStorage.getItem("lang");
+          if (stored === "es" || stored === "en") lang = stored;
+          else if ((navigator.language || "").toLowerCase().indexOf("es") === 0) lang = "es";
+        } catch (e) {}
+        document.documentElement.lang = lang;
+        document.title =
+          lang === "es"
+            ? "Fernando Mendívil — DevOps y Cloud Engineer"
+            : "Fernando Mendívil — DevOps and Cloud Engineer";
+        var desc = document.querySelector('meta[name="description"]');
+        if (desc) {
+          desc.setAttribute(
+            "content",
+            lang === "es"
+              ? "DevOps y Cloud Engineer. Automatización de infraestructura en AWS y Azure con Terraform, CI/CD, contenedores y monitoreo."
+              : "DevOps and Cloud Engineer. Infrastructure automation on AWS and Azure with Terraform, CI/CD, containers, and monitoring."
+          );
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">
+      <span data-lang="es">Saltar al contenido</span>
+      <span data-lang="en">Skip to content</span>
+    </a>
+
+    <header class="site-header">
+      <a class="brand" href="#top">Fernando Mendívil</a>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        <span data-lang="es">Menú</span>
+        <span data-lang="en">Menu</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="#projects">
+          <span data-lang="es">Proyectos</span>
+          <span data-lang="en">Projects</span>
+        </a>
+        <a href="#skills">
+          <span data-lang="es">Habilidades</span>
+          <span data-lang="en">Skills</span>
+        </a>
+        <a href="#experience">
+          <span data-lang="es">Experiencia</span>
+          <span data-lang="en">Experience</span>
+        </a>
+        <a href="#contact">
+          <span data-lang="es">Contacto</span>
+          <span data-lang="en">Contact</span>
+        </a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-set-lang="es" lang="es">ES</button>
+        <button type="button" data-set-lang="en" lang="en">EN</button>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="hero" id="top">
+        <p class="eyebrow">
+          <span data-lang="es">DevOps y Cloud Engineer</span>
+          <span data-lang="en">DevOps and Cloud Engineer</span>
+        </p>
+        <h1>Fernando de Jesús Mendívil Terminel</h1>
+        <p class="lede">
+          <span data-lang="es">
+            Automatizo infraestructura y operaciones en AWS y Azure: Terraform,
+            CI/CD, contenedores y monitoreo. Contribuí a un monitoreo
+            centralizado en AWS que mejoró la detección en un 55%, y entregué
+            integraciones cloud en Azure.
+          </span>
+          <span data-lang="en">
+            I automate infrastructure and operations across AWS and Azure:
+            Terraform, CI/CD, containers, and monitoring. I contributed to
+            centralized AWS monitoring that improved detection effectiveness by
+            55%, and delivered cloud integrations on Azure.
+          </span>
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="#contact">
+            <span data-lang="es">Contacto</span>
+            <span data-lang="en">Contact</span>
+          </a>
+          <a class="button button-secondary" href="cv/fernando-mendivil-cv.pdf" download>
+            <span data-lang="es">Descargar CV</span>
+            <span data-lang="en">Download CV</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="projects" aria-labelledby="projects-title">
+        <header class="section-head">
+          <h2 id="projects-title">
+            <span data-lang="es">Proyectos destacados</span>
+            <span data-lang="en">Selected work</span>
+          </h2>
+          <p>
+            <span data-lang="es">
+              Trabajo de infraestructura en Coforge. No son repositorios de
+              producto: son piezas de plataforma.
+            </span>
+            <span data-lang="en">
+              Infrastructure work at Coforge. These are platform pieces, not
+              product repositories.
+            </span>
+          </p>
+        </header>
+        <div class="project-grid">
+          <article class="project">
+            <p class="project-index">01</p>
+            <h3>
+              <span data-lang="es">Monitoreo multi-cuenta en AWS</span>
+              <span data-lang="en">Multi-account AWS monitoring</span>
+            </h3>
+            <p>
+              <span data-lang="es">
+                Centralicé el monitoreo de varias cuentas con CloudWatch y
+                DevOps Guru. Las señales proactivas y reactivas quedaron en un
+                tablero, y la efectividad de detección subió un 55%.
+              </span>
+              <span data-lang="en">
+                Centralized monitoring across multiple accounts with CloudWatch
+                and DevOps Guru. Proactive and reactive signals landed in one
+                dashboard, and detection effectiveness rose by 55%.
+              </span>
+            </p>
+            <ul class="tags">
+              <li>AWS</li>
+              <li>CloudWatch</li>
+              <li>DevOps Guru</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <p class="project-index">02</p>
+            <h3>
+              <span data-lang="es">Infraestructura como código</span>
+              <span data-lang="en">Infrastructure as code</span>
+            </h3>
+            <p>
+              <span data-lang="es">
+                Pipelines de Terraform para aprovisionar stacks de monitoreo y
+                alertas, con menos configuración manual.
+              </span>
+              <span data-lang="en">
+                Terraform pipelines that provision monitoring and alerting
+                stacks, with less manual setup.
+              </span>
+            </p>
+            <ul class="tags">
+              <li>Terraform</li>
+              <li>IaC</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <p class="project-index">03</p>
+            <h3>
+              <span data-lang="es">CI/CD de infraestructura y aplicaciones</span>
+              <span data-lang="en">Infrastructure and application CI/CD</span>
+            </h3>
+            <p>
+              <span data-lang="es">
+                Workflows en GitHub Actions con chequeos estáticos y revisión
+                asistida, para encontrar fallos antes del despliegue.
+              </span>
+              <span data-lang="en">
+                GitHub Actions workflows with static checks and assisted
+                review, so failures show up before deployment.
+              </span>
+            </p>
+            <ul class="tags">
+              <li>GitHub Actions</li>
+              <li>CI/CD</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <p class="project-index">04</p>
+            <h3>
+              <span data-lang="es">Integraciones seguras en Azure</span>
+              <span data-lang="en">Secure Azure integrations</span>
+            </h3>
+            <p>
+              <span data-lang="es">
+                Agentes serverless y servidores MCP en contenedores, con el
+                acceso de la organización protegido por Azure AD OAuth.
+              </span>
+              <span data-lang="en">
+                Serverless agents and containerized MCP servers, with
+                organizational access secured through Azure AD OAuth.
+              </span>
+            </p>
+            <ul class="tags">
+              <li>Azure</li>
+              <li>Docker</li>
+              <li>Entra ID</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" aria-labelledby="skills-title">
+        <header class="section-head">
+          <h2 id="skills-title">
+            <span data-lang="es">Habilidades</span>
+            <span data-lang="en">Skills</span>
+          </h2>
+          <p>
+            <span data-lang="es">
+              El camino es DevOps e infraestructura en la nube.
+            </span>
+            <span data-lang="en">
+              The path is DevOps and cloud infrastructure.
+            </span>
+          </p>
+        </header>
+        <ul class="skill-grid">
+          <li>
+            <h3>AWS</h3>
+            <p>
+              <span data-lang="es">CloudWatch, DevOps Guru y operaciones en varias cuentas.</span>
+              <span data-lang="en">CloudWatch, DevOps Guru, and multi-account operations.</span>
+            </p>
+          </li>
+          <li>
+            <h3>Azure</h3>
+            <p>
+              <span data-lang="es">Serverless y acceso con Azure AD OAuth.</span>
+              <span data-lang="en">Serverless and access with Azure AD OAuth.</span>
+            </p>
+          </li>
+          <li>
+            <h3>Terraform</h3>
+            <p>
+              <span data-lang="es">Infraestructura como código para stacks de plataforma.</span>
+              <span data-lang="en">Infrastructure as code for platform stacks.</span>
+            </p>
+          </li>
+          <li>
+            <h3>CI/CD</h3>
+            <p>
+              <span data-lang="es">GitHub Actions para infraestructura y aplicaciones.</span>
+              <span data-lang="en">GitHub Actions for infrastructure and applications.</span>
+            </p>
+          </li>
+          <li>
+            <h3>Docker</h3>
+            <p>
+              <span data-lang="es">Servicios en contenedores, incluido MCP.</span>
+              <span data-lang="en">Containerized services, including MCP.</span>
+            </p>
+          </li>
+          <li>
+            <h3>Linux</h3>
+            <p>
+              <span data-lang="es">Operación diaria de entornos cloud.</span>
+              <span data-lang="en">Day-to-day operation of cloud environments.</span>
+            </p>
+          </li>
+          <li>
+            <h3>
+              <span data-lang="es">Monitoreo</span>
+              <span data-lang="en">Monitoring</span>
+            </h3>
+            <p>
+              <span data-lang="es">Observabilidad, alertas y AIOps.</span>
+              <span data-lang="en">Observability, alerting, and AIOps.</span>
+            </p>
+          </li>
+          <li>
+            <h3>Python</h3>
+            <p>
+              <span data-lang="es">Scripting de apoyo a la automatización.</span>
+              <span data-lang="en">Scripting in support of automation.</span>
+            </p>
+          </li>
+        </ul>
+        <p class="aside">
+          <span data-lang="es">
+            El recorrido empieza en ingeniería de software, con .NET, Spring
+            Boot, React y APIs REST. Hoy el foco es la plataforma.
+          </span>
+          <span data-lang="en">
+            The path starts in software engineering, with .NET, Spring Boot,
+            React, and REST APIs. The focus now is the platform.
+          </span>
+        </p>
+      </section>
+
+      <section id="experience" aria-labelledby="experience-title">
+        <header class="section-head">
+          <h2 id="experience-title">
+            <span data-lang="es">Experiencia</span>
+            <span data-lang="en">Experience</span>
+          </h2>
+        </header>
+        <ol class="timeline">
+          <li>
+            <div class="role">
+              <h3>Cloud Engineer <span class="at">Coforge</span></h3>
+              <p class="when">
+                <time datetime="2024-12">
+                  <span data-lang="es">Dic 2024</span>
+                  <span data-lang="en">Dec 2024</span>
+                </time>
+                <span aria-hidden="true">–</span>
+                <span data-lang="es">Actualidad</span>
+                <span data-lang="en">Present</span>
+              </p>
+            </div>
+            <p>
+              <span data-lang="es">
+                Operación cloud: monitoreo multi-cuenta, Terraform, CI/CD y
+                soluciones en Azure con acceso asegurado.
+              </span>
+              <span data-lang="en">
+                Cloud operations: multi-account monitoring, Terraform, CI/CD,
+                and Azure solutions with secured access.
+              </span>
+            </p>
+          </li>
+          <li>
+            <div class="role">
+              <h3>Spark Apprentice <span class="at">Encora</span></h3>
+              <p class="when">
+                <time datetime="2024-04">
+                  <span data-lang="es">Abr 2024</span>
+                  <span data-lang="en">Apr 2024</span>
+                </time>
+                <span aria-hidden="true">–</span>
+                <time datetime="2024-12">
+                  <span data-lang="es">Dic 2024</span>
+                  <span data-lang="en">Dec 2024</span>
+                </time>
+              </p>
+            </div>
+            <p>
+              <span data-lang="es">
+                Formación en AWS y entrega de un servicio de punta a punta,
+                desde la especificación hasta el despliegue.
+              </span>
+              <span data-lang="en">
+                AWS training and delivery of an end-to-end service, from
+                specification through deployment.
+              </span>
+            </p>
+          </li>
+          <li>
+            <div class="role">
+              <h3>Full Stack Developer Intern <span class="at">Xipe Group</span></h3>
+              <p class="when">
+                <time datetime="2022-07">
+                  <span data-lang="es">Jul 2022</span>
+                  <span data-lang="en">Jul 2022</span>
+                </time>
+                <span aria-hidden="true">–</span>
+                <time datetime="2024-02">
+                  <span data-lang="es">Feb 2024</span>
+                  <span data-lang="en">Feb 2024</span>
+                </time>
+              </p>
+            </div>
+            <p>
+              <span data-lang="es">
+                APIs y esquemas de datos en .NET, en equipo con diseño y QA.
+              </span>
+              <span data-lang="en">
+                .NET APIs and data schemas, working with design and QA.
+              </span>
+            </p>
+          </li>
+        </ol>
+
+        <div class="credentials">
+          <div>
+            <h3>
+              <span data-lang="es">Educación</span>
+              <span data-lang="en">Education</span>
+            </h3>
+            <p>Tec de Monterrey</p>
+            <p>
+              <span data-lang="es">Ingeniería en Tecnologías Computacionales</span>
+              <span data-lang="en">B.S. in Computer Technologies Engineering</span>
+            </p>
+          </div>
+          <div>
+            <h3>
+              <span data-lang="es">Certificaciones</span>
+              <span data-lang="en">Certifications</span>
+            </h3>
+            <ul class="certs">
+              <li>Azure Administrator Associate <span class="year">2026</span></li>
+              <li>AWS Solutions Architect Associate <span class="year">2025</span></li>
+              <li>AWS Certified Developer – Associate <span class="year">2024</span></li>
+              <li>AWS Partner: Agentic AI Essentials</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" aria-labelledby="contact-title">
+        <header class="section-head">
+          <h2 id="contact-title">
+            <span data-lang="es">Contacto</span>
+            <span data-lang="en">Contact</span>
+          </h2>
+          <p>
+            <span data-lang="es">Correo, LinkedIn o GitHub. El formulario abre tu cliente de correo.</span>
+            <span data-lang="en">Email, LinkedIn, or GitHub. The form opens your mail client.</span>
+          </p>
+        </header>
+        <ul class="contact-links">
+          <li>
+            <a href="mailto:fermendivilt@gmail.com">fermendivilt@gmail.com</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/fernando-de-jesus-mendivil-terminel" rel="noopener noreferrer">LinkedIn</a>
+          </li>
+          <li>
+            <a href="https://github.com/fermendivilt" rel="noopener noreferrer">GitHub</a>
+          </li>
+        </ul>
+        <form id="contact-form" novalidate>
+          <div class="field">
+            <label for="name">
+              <span data-lang="es">Nombre</span>
+              <span data-lang="en">Name</span>
+            </label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="email">
+              <span data-lang="es">Correo</span>
+              <span data-lang="en">Email</span>
+            </label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="message">
+              <span data-lang="es">Mensaje</span>
+              <span data-lang="en">Message</span>
+            </label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <p class="form-status" id="form-error" role="alert" hidden>
+            <span data-lang="es">Escribe tu nombre, un correo válido y un mensaje.</span>
+            <span data-lang="en">Enter your name, a valid email, and a message.</span>
+          </p>
+          <button class="button" type="submit">
+            <span data-lang="es">Enviar</span>
+            <span data-lang="en">Send</span>
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Fernando de Jesús Mendívil Terminel</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
